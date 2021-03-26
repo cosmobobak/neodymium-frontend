@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NDAI</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+        integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin="anonymous"></script>
+
+    <script src="node_modules/chess.js/chess.js"></script>
+    <script src="div_openers.js"></script>
+    <script src="chess_logic.js"></script>
+    <script src="bahamut.js"></script>
+</head>
+
+<body>
+    <div id="site_container">
+        <h1>The Neodymium AI Collection</h1>
+        <div id="game_list">
+            <ul id="ai_names">
+                <li class="virichess toggle_rider">
+                    Viridithas
+                </li>
+                <li class="vorpchess toggle_rider">
+                    Vorpal
+                </li>
+                <li class="uttt toggle_rider">
+                    Iridium
+                </li>
+                <li class="ttt toggle_rider">
+                    Iridium
+                </li>
+                <li class="connect4 toggle_rider">
+                    Iridium
+                </li>
+                <li class="gomoku toggle_rider">
+                    Iridium
+                </li>
+            </ul>
+            <ul id="game_names">
+                <li class="virichess toggle_clicker" onclick="virichess_click()">
+                    [Chess]
+                </li>
+                <li class="vorpchess toggle_clicker" onclick="vorpchess_click()">
+                    [Chess]
+                </li>
+                <li class="uttt toggle_clicker" onclick="uttt_click()">
+                    [Ultimate Tic-Tac-Toe]
+                </li>
+                <li class="ttt toggle_clicker" onclick="ttt_click()">
+                    [Tic-Tac-Toe]
+                </li>
+                <li class="connect4 toggle_clicker" onclick="connect4_click()">
+                    [Connect 4]
+                </li>
+                <li class="gomoku toggle_clicker" onclick="gomoku_click()">
+                    [Gomoku]
+                </li>
+            </ul>
+        </div>
+        <div id="game_box">
+            <div id="game_virichess" class="game">
+                <div id="viriboard" style="width: 400px"></div>
+                <label>Status:</label>
+                <div id="status"></div>
+                <label>FEN:</label>
+                <div id="fen"></div>
+                <label>PGN:</label>
+                <div id="pgn"></div>
+            </div>
+            <div id="game_vorpchess" class="game">
+                <div id="vorpboard" style="width: 400px"></div>
+            </div>
+            <div id="game_uttt" class="game">
+                unc
+            </div>
+            <div id="game_ttt" class="game">
+                nc
+            </div>
+            <div id="game_connect4" class="game">
+                cf
+            </div>
+            <div id="game_gomoku" class="game">
+                gmk
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
